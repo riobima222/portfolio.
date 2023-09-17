@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .9rem;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* my css */
+
+
+/* SECTION 1 LANDING AREA */
+section.landing {
+    height: 100vh;
+    background-color: #36454F;
+    border-bottom: 2px solid black;
+}
+
+.container1 {
+    padding-top: 1.5em;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding: 0 1em;
+}
+
+.landing ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .1em;
+}
+
+.landing ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 3.5em;
+    position: relative;
+
+}
+
+.landing ul li:nth-child(1)::after {
+    content: '';
+    display: inline-block;
+    width: 2.1em;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.landing ul li:hover::after {
+    content: '';
+    display: inline-block;
+    width: 2.1em;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.navbar h2 {
+    letter-spacing: .5em;
+}
+
+.navigator {
+    display: none;
+}
+
+
+
+/* hero left*/
+.hero {
+    display: flex;
+    height: 100%;
+    transform: translate(0, -4%);
+}
+
+.heroleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.introduce {
+    position: relative;
+}
+
+.introduce svg {
+    position: absolute;
+    top: -1.3em;
+    left: 0;
+    z-index: -1;
+    max-width: 160px;
+}
+
+.introduce h1 {
+    font-size: 4rem;
+    line-height: 1.4em;
+}
+
+.introduce h4 {
+    margin-left: .5em;
+    font-weight: 200;
+    letter-spacing: .2em;
+}
+
+.introduce a i {
+    font-size: 2rem;
+    margin-top: 2em;
+    margin-right: 1em;
+    color: white;
+    transition: .24s;
+}
+
+.introduce a i:hover {
+    color: #f25b15;
+}
+
+.introduce a:nth-child(4) i {
+    margin-left: .2em;
+}
+
+
+
+/* hero right */
+.heroright {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.heroright img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.heroright svg {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION 2 ABOUT ME */
+
+
+/* Aboutme top */
+section.aboutme {
+    min-height: 600px;
+    background-color: #2e3a41;
+}
+
+.abouttop {
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.tech i {
+    font-size: 5rem;
+    color: rgb(228, 228, 228);
+    transition: .3s;
+}
+
+.tech {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.tech a {
+    padding: 2em 2em;
+    background-color: #35434b;
+}
+
+.tech a:nth-child(1):hover i {
+    color: #ffed33;
+}
+
+.tech a:nth-child(2):hover i {
+    color: #f16529ff;
+
+}
+
+.tech a:nth-child(3):hover i {
+    color: #5b36c1;
+}
+
+.tech a:nth-child(4):hover i {
+    color: #254bddff;
+}
+
+.tech a:nth-child(5):hover i {
+    color: #90c53fff;
+}
+
+
+/* about me bottom */
+.aboutbot {
+    display: flex;
+    padding-top: 4em;
+}
+
+.aboutbotleft {
+    line-height: 0;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.aboutbotright {
+    width: 50%;
+    padding-top: 6em;
+}
+
+.aboutbotright h2 {
+    margin-bottom: 1.1em;
+    text-align: center;
+}
+
+.aboutbotright p {
+    line-height: 2em;
+    text-align: justify;
+}
+
+.aboutbotleft img {
+    line-height: 0;
+}
+
+
+
+
+
+
+
+/* SECTION 3 PROJECTS */
+section.projects {
+    min-height: 400px;
+    background-color: #36454F;
+}
+
+.container3 {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.container3 h1 {
+    margin-bottom: 2.5em;
+}
+
+.projectC {
+    max-width: 1000px;
+    margin: auto;
+    padding: .9em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5em;
+    row-gap: 3em;
+    column-gap: 4em;
+    max-width: 900px;
+}
+
+.projectContent .title {
+    margin-bottom: .8em;
+    font-size: 1.3rem;
+    color: rgb(203, 203, 203);
+}
+
+.projectC img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    display: flex;
+    margin-bottom: 1em;
+    color: rgb(225, 225, 225);
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    background-color: #2e3a41;
+    padding: .3em .86em;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.card a:hover {
+    background-color: #1e2427;
+}
+
+.card img {
+    margin-bottom: .7em;
+}
+
+.card .Pdesc {
+    text-align: justify;
+}
+
+.card .no {
+    display: inline-block;
+    padding-bottom: 2em;
+    margin-right: .5em;
+}
+
+
+
+
+
+
+
+/* SECTION 4 CONTACT */
+section.contacts {
+    min-height: 450px;
+    background-color: #2e3a41;
+}
+
+.container4 {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.container4 h1 {
+    margin-bottom: 1em;
+}
+
+.contactC {
+    max-width: 700px;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactLeft p {
+    display: inline;
+}
+
+.contactLeft {
+    background-color: #35434b;
+    width: 25%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contactLeft i {
+    color: white;
+    font-size: 1.4rem;
+    margin-right: .5em;
+    transform: translate(0, .14em);
+}
+
+.contactLeft p {
+    color: white;
+    text-decoration: none;
+}
+
+.contactRight {
+    width: 74%;
+    background-color: #35434b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contactRight h1 {
+    opacity: .5;
+    line-height: 0;
+}
+
+.contactRight h1:nth-child(3) {
+    margin-top: 1.5em;
+}
+
+.contactRight p {
+    opacity: .8;
+}
+
+.facebook,
+.twitter,
+.instagram {
+    margin-left: 2em;
+}
+
+.contactC p:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* FOOTER */
+footer.footer {
+    background-color: #36454F;
+}
+
+.container5 {
+    padding: 1.1em;
+    text-align: center;
+}
+
+.container5 p {
+    font-size: .8rem;
+}

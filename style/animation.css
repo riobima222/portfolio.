@@ -1,0 +1,23 @@
+/* ANIMATION */
+
+/* container 1 */
+.landing ul li:hover::after {
+    animation: nav 0.39s;
+}
+
+/* container 2 */
+
+
+
+
+/* keyframes */
+
+@keyframes nav {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 2.1em;
+    }
+}
